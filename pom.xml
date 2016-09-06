@@ -23,6 +23,7 @@
 		<start-class>demo.SpringSecuritySessionRedisUserDetailsServiceApplication</start-class>
 		<java.version>1.7</java.version>
 		<lightadmin.version>1.2.0.RC1</lightadmin.version>
+		<zxing.version>3.2.1</zxing.version>
 	</properties>
 
 	<dependencies>
@@ -92,6 +93,23 @@
 			<!-- Please change scope to "provided" for deploying as a web module to 
 				servlet container -->
 			<scope>compile</scope>
+		</dependency>
+		<!--二维码生成jar-->
+		<dependency>
+			<groupId>com.google.zxing</groupId>
+			<artifactId>core</artifactId>
+			<version>${zxing.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.zxing</groupId>
+			<artifactId>javase</artifactId>
+			<version>${zxing.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.10</version>
 		</dependency>
 	</dependencies>
 
